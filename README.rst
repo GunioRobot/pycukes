@@ -26,7 +26,7 @@ To run your stories, you can simple call::
     $ pycukes
 
 Or if you can specify exactly what stories run::
-    
+
     $ pycukes stories/calculator.story
 
 
@@ -56,12 +56,12 @@ Directory tree::
 
 Content of bowling_game.story file::
 
-    hugo@hugo-laptop:~/app$ cat stories/bowling_game.story 
+    hugo@hugo-laptop:~/app$ cat stories/bowling_game.story
     Story: Bowling Game
       As a bowling player
       I want to play bowling online
       So that I can play with everyone in the world
-      
+
         Scenario 1: Gutter Game
           Given I am playing a bowling game
           When I hit no pins
@@ -88,11 +88,11 @@ Content of bowling_game_steps.py::
 
     @Then('I have 0 points')
     def i_have_zero_points(context):
-        assert context._bowling_game.score == 0 
+        assert context._bowling_game.score == 0
 
 Running::
 
-    hugo@hugo-laptop:~/app$ pycukes stories/bowling_game.story 
+    hugo@hugo-laptop:~/app$ pycukes stories/bowling_game.story
     Story: Bowling Game
       As a bowling player
       I want to play bowling online
